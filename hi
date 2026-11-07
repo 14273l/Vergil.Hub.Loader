@@ -5,6 +5,7 @@ end
 local SCRIPT_URL_URBAN  = 'https://raw.githubusercontent.com/14273l/Vergil.Urban/refs/heads/main/src'
 local SCRIPT_URL_STRAFE = 'https://raw.githubusercontent.com/14273l/Vergil.StrafeFps/refs/heads/main/src'
 local SCRIPT_URL_MM2    = 'https://raw.githubusercontent.com/14273l/Vergil.mm2/refs/heads/main/Auto%20farm'
+local SCRIPT_URL_PF     = 'https://raw.githubusercontent.com/14273l/Vergil.PF/refs/heads/main/w'
 
 if game.PlaceId == 84448037861644 then
     loadstring(game:HttpGet(SCRIPT_URL_URBAN))()
@@ -12,6 +13,8 @@ elseif game.PlaceId == 109020905733214 then
     loadstring(game:HttpGet(SCRIPT_URL_STRAFE))()
 elseif game.PlaceId == 142823291 then
     loadstring(game:HttpGet(SCRIPT_URL_MM2))()
+elseif game.PlaceId == 292439477 then
+    loadstring(game:HttpGet(SCRIPT_URL_PF))()
 else
     game.Players.LocalPlayer:Kick("Game is unsupported. PlaceId: " .. game.PlaceId)
     return
